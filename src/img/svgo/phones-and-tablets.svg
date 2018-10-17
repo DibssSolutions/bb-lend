@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="96px" viewBox="0 0 96 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>97D71886-B45E-4252-BE65-E53334039FE1</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="66.1820023%" y1="0%" x2="66.1820023%" y2="135.558712%" id="linearGradient-1">
+            <stop stop-color="#4AC2FF" offset="0%"></stop>
+            <stop stop-color="#4BB7FF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="01.-Index-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bba/-web-1-/-00-landing-design" transform="translate(-200.000000, -485.000000)" fill-rule="nonzero">
+            <g id="1.-Title">
+                <g id="for" transform="translate(200.000000, 331.000000)">
+                    <g id="#2" transform="translate(0.000000, 154.000000)">
+                        <g id="Group-7">
+                            <g id="Group-12" transform="translate(-21.000000, 0.000000)">
+                                <rect id="Rectangle-3" stroke="#D3D9DD" stroke-width="4" opacity="0.556305804" transform="translate(30.500000, 48.000000) rotate(-90.000000) translate(-30.500000, -48.000000) " x="-7.5" y="19.5" width="76" height="57" rx="7"></rect>
+                                <path d="M69,71 L69,25 C69,21.1340068 72.1340068,18 76,18 L104,18 C107.865993,18 111,21.1340068 111,25 L111,71 C111,74.8659932 107.865993,78 104,78 L76,78 C72.1340068,78 69,74.8659932 69,71 Z M86,71 C84.8954305,71 84,71.8954305 84,73 C84,74.1045695 84.8954305,75 86,75 L94,75 C95.1045695,75 96,74.1045695 96,73 C96,71.8954305 95.1045695,71 94,71 L86,71 Z M85,22 C84.4477153,22 84,22.4477153 84,23 C84,23.5522847 84.4477153,24 85,24 C85.5522847,24 86,23.5522847 86,23 C86,22.4477153 85.5522847,22 85,22 Z M88,22 C87.4477153,22 87,22.4477153 87,23 C87,23.5522847 87.4477153,24 88,24 L93,24 C93.5522847,24 94,23.5522847 94,23 C94,22.4477153 93.5522847,22 93,22 L88,22 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

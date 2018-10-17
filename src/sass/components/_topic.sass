@@ -1,0 +1,153 @@
+.topic
+	padding-top: 80px
+	background-color: $dark
+
+	&__inner
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	&__title
+		letter-spacing: 1px
+
+	&__discr
+		font-size: 16px
+		color: #f8fdff
+		margin-top: 16px
+		letter-spacing: 0.5px
+
+	&__links-list
+		display: flex
+		margin-top: 16px
+
+	&__links-item
+		&:not(:last-child)
+			&:after
+				content: "|"
+				font-size: 24px
+				color: $sky-blue
+				margin-right: 6px
+
+	&__links-link
+		font-size: 24px
+		color: $sky-blue
+		&:hover
+			opacity: 0.7
+		&:active
+			opacity: 0.85
+
+	&__obj-list
+		position: relative
+		width: 100%
+		max-width: 1068px
+		margin: 0 auto
+		height: 373px
+
+	&__obj-item
+		position: absolute
+		width: 96px
+		height: 96px
+		background-color: #2e3b44
+		border-radius: 8px
+		box-shadow: 0px 5px 36px 0px rgba($black, 0.75)
+		&:hover
+			opacity: 0.7
+		&:active
+			opacity: 0.85
+
+	&__obj_android-tv
+		top: 21px
+		left: 152px
+		.topic__obj-title
+			top: 28px
+			left: -70px
+
+	&__obj_apple-tv
+		top: 69px
+		left: 360px
+		.topic__obj-title
+			bottom: -16px
+			left: 24px
+
+	&__obj_web
+		top: 43px
+		right: 254px
+		.topic__obj-title
+			top: 24px
+			right: -30px
+
+	&__obj_beacons
+		top: 43px
+		right: 50px
+		.topic__obj-title
+			text-align: center
+			bottom: -31px
+			left: 31px
+
+	&__obj_iot
+		bottom: 118px
+		right: 408px
+		.topic__obj-title
+			top: 19px
+			left: -29px
+
+	&__obj_phones-tablets
+		bottom: 102px
+		left: 14px
+		.topic__obj-title
+			top: 21px
+			right: -76px
+			width: 75px
+			text-align: center
+
+	&__obj_iphone-ipad
+		bottom: 32px
+		left: 246px
+		.topic__obj-title
+			top: -19px
+			right: 10px
+
+	&__obj_wearables
+		bottom: 41px
+		right: 186px
+		.topic__obj-title
+			bottom: 32px
+			left: -69px
+
+
+	//&__obj_
+
+	&__obj-link
+		position: absolute
+
+	&__obj-icon
+
+	&__obj-title
+		position: absolute
+		font-size: 10px
+		color: $sky-blue
+		text-transform: uppercase
+		letter-spacing: 0.5px
+
+	&__descr
+		margin-top: 2px
+		font-size: 16px
+		color: $white
+
+	&__btn
+		margin-bottom: 40px
+		margin-top: 17px
+		text-transform: uppercase
+		font-weight: 600
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+<!-- begin topic -->
+{% import "data/topic-data.html" as data %}
+<div class="topic">
+  <div class="topic__inner inner">
+    <h2 class="topic__title title title__lg title__white">Build a Product</h2>
+    <p class="topic__discr">with smarter value</p>
+    <ul class="topic__links-list">
+      {% for item in data.product %}
+        <li class="topic__links-item">
+          <a class="topic__links-link" href="{{ item.link }}">{{ item.text }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <ul class="topic__obj-list">
+      {% for item in data.links %}
+        <li class="topic__obj-item topic__obj_{{ item.name }}">
+          <a href="#" class="topic__obj-link">
+            <span class="topic__obj-icon"><img src="./img/{{ item.icon }}.svg" alt="topic image"></span>
+            <span class="topic__obj-title">{{ item.title }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+      <p class="topic__descr">Need assistance with your project?</p>
+      <a href="#" class="topic__btn btn">let us help</a>
+  </div>
+</div>
