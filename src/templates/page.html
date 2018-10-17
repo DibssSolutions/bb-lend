@@ -5,46 +5,212 @@ title: Index page
 
 {% block content %}
 	
-	{# variable example #}
-	<h1>{{title}}</h1>
+	<!-- begin topic -->
+	<div class="topic">
+		<div class="topic__inner">
+			<div class="topic__title">Build a Product</div>
+			<div class="topic__discr">with smarter value</div>
+			<ul class="topic__links">
+				{% for item in [
+					{
+						link: "#",
+						text: 'Strategy'
+					},
+					{
+						link: "#",
+						text: 'Design'
+					},
+					{
+						link: "#",
+						text: 'Development'
+					},
+					{
+						link: "#",
+						text: 'Growth'
+					}
+				] %}
+				<li class="topic__item">
+					<a href="{{ item.link }}">{{ item.text }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+			<ul class="topic__list">
+				{% for item in [
+					{
+						name: 'android-tv',
+						title: 'Android TV',
+						icon: 'android-tv'
+					},
+					{
+						name: 'apple-tv',
+						title: 'Apple TV',
+						icon: 'apple-tv'
+					},
 
-	
-	{# partial example #}
-	{% include "partials/_header.html" %}
-
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
-
-
-	{# checkbox exepmle #}
-	<p>{{ mixins.checkbox() }}</p>
-	<p>
-		{{ mixins.checkbox({
-			checked: true,
-			name: 'exemple-name',
-			text: 'checkbox-checked'
-		}) }}
-	</p>
-	{# radio exepmle #}
-	{{ mixins.checkbox({
-		name: 'exemple-name',
-		text: 'text',
-		radio: true
-	}) }}
-	
-
-	{# breadcrumbs exepmle #}
-	{{ mixins.breadcrumbs({
-		list: ['Главная','Внутренняя','Корзина']
-	}) }}
-
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
-		
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
-	{# end of example #}
+					{
+						name: 'web',
+						title: 'Web',
+						icon: 'web'
+					},
+					{
+						name: 'beacons',
+						title: 'Beacons & Accessories',
+						icon: 'beacons'
+					},
+					{
+						name: 'iot',
+						title: 'IoT',
+						icon: 'iot'
+					},
+					{
+						name: 'phones-tablets',
+						title: 'Phones & Tablets',
+						icon: 'phones-tablets'
+					},
+					{
+						name: 'iphone-ipad',
+						title: 'iPhone & iPad',
+						icon: 'iphone-ipad'
+					},
+					{
+						name: 'wearables',
+						title: 'Wearables',
+						icon: 'wearables'
+					}
+				] %}
+				<li class="topic__obj topic__obj_{{ item.name }}">
+					<a href="#" class="topic__link">
+						<span class="topic__icon"><img src="./img/{{ item.icon }}" alt="img"></span>
+						<span class="topic__title">{{ item.title }}</span>
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+			<div class="topic__descr"></div>
+			<div class="topic__footer">
+				<a href="#" class="btn"></a>
+			</div>
+		</div>
+	</div>
+	<!-- end topic -->
+	<!-- begin achieve -->
+	<div class="achieve">
+		<div class="achieve__inner inner">
+			<h2 class="achieve__title title">Achieve more</h2>
+			<div class="descr">Hop us in at any stage:</div>
+			<div class="achieve__row">
+				{% for item in [
+					{
+						title: "Product Strategy",
+						icon: "product-strategy",
+						list: [
+							{
+								text: "<span class='text-bold'>Idea evaluation</span> to check if the market’s ready for your product"
+							},
+							{
+								text: "<span class='text-bold'>Business strategy</span> to fit into your time and budget limits"
+							},
+							{
+								text: "<span class='text-bold'>Product design</span> to make sure you address users’ expectations"
+							}
+						]
+					},
+					{
+						title: "Product building",
+						icon: "product-building",
+						list: [
+							{
+								text: "We’ll <span class='text-bold'>manage your project</span> to let you focus on your business"
+							},
+							{
+								text: "<span class='text-bold'>UX/UI design</span> to make your product shine among others"
+							},
+							{
+								text: "<span class='text-bold'>Software development</span> to turn your all your ideas into life"
+							},
+							{
+								text: "<span class='text-bold'>Quality assurance</span> to make every release smooth and steady"
+							}
+						]
+					},
+					{
+						title: "Product growth",
+						icon: "product-growth",
+						list: [
+							{
+								text: "Explode the internet on your <span class='text-bold'>product release</span> with our help"
+							},
+							{
+								text: "<span class='text-bold'>Refinement & modernization</span> to make your success a never-ending story"
+							},
+							{
+								text: "<span class='text-bold'>Support & maintenance</span> for top product realibility and scalability"
+							}
+						]
+					}
+				] %}
+				<div class="achieve__col">
+					<div class="achieve__head">
+						<div class="achieve__icon">{{ mixins.icon() }}</div>
+						<h4 class="achieve__title-sm"></h4>
+					</div>
+					<ul class="achieve__list">
+						<li class="achieve__item"></li>
+					</ul>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<!-- end achieve -->
+	<!-- begin workflow -->
+	<div class="workflow">
+		<div class="workflow__inner inner">
+			<div class="workflow__title title">Workflow</div>
+			<div class="workflow__list">
+				{% for item in [
+					{
+						icon: 'estimation',
+						name: 'Estimation'
+					},
+					{
+						icon: 'scope',
+						name: 'Scope'
+					},
+					{
+						icon: 'strategy',
+						name: 'Strategy'
+					},
+					{
+						icon: 'design',
+						name: 'Design'
+					},
+					{
+						icon: 'development',
+						name: 'Development'
+					},
+					{
+						icon: 'release',
+						name: 'Release'
+					},
+					{
+						icon: 'growth',
+						name: 'Growth'
+					}
+				] %}
+				<div class="workflow__item">
+					<a href="#" class="workflow__link">
+						<span class="workflow__icon">
+							<img src="./img/{{ item.icon }}" alt="img">
+						</span>
+						<span class="workflow__name">{{ item.name }}</span>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<!-- end workflow -->
 
 {% endblock %}
+
