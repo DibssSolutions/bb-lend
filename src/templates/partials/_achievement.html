@@ -7,7 +7,6 @@
     <ul class="achievement__achieve-list">
       {% for item in data.list %}
         <li class="achievement__achieve-item">
-          <div class="achievement__col">
             <div class="achievement__head">
               <div class="achievement__achieve-icon">
                 <img class="achievement__achieve-image" src="img/{{ item.icon }}.svg" alt="Achieve image"/>
@@ -23,7 +22,6 @@
                 </li>
               {% endfor %}
             </ul>
-          </div>
         </li>
       {% endfor %}
     </ul>

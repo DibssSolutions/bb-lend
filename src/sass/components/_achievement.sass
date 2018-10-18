@@ -1,6 +1,10 @@
 .achievement
 	padding-top: 80px
 	background-color: $white
+	+md
+		padding-top: 60px
+	+sm
+		padding-top: 40px
 
 	&__inner
 		display: flex
@@ -12,24 +16,41 @@
 	&__descr
 		+notosans
 		font-size: 16px
+		+md
+			font-size: 14px
 
 	&__achieve-list
 		width: 100%
 		margin-top: 54px
+		padding: 0 16px
 		display: flex
 		justify-content: space-between
+		+md
+			padding: 0 12px
+			margin-top: 32px
+		+sm
+			flex-wrap: wrap
+			padding: 0 6px
+			margin-top: 0
+			justify-content: center
 
 	&__achieve-item
 		padding: 24px
 		background-color: #fafbfc
-		width: 33%
+		width: 32%
 		max-width: 337px
-
-	&__col
+		+md
+			padding: 16px
+		+sm
+			margin-top: 24px
+			width: 100%
+			max-width: 430px
 
 	&__head
 		display: flex
 		align-items: center
+		+sm
+			justify-content: center
 
 	&__achieve-icon
 		width: 48px
@@ -56,6 +77,7 @@
 		&:before
 			content: "•"
 			color: $greyish-brown
+
 
 	&__bold
 		font-weight: 700
