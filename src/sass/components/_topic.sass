@@ -1,6 +1,10 @@
 .topic
 	padding-top: 80px
 	background-color: $dark
+	+md
+		padding-top: 60px
+	+sm
+		padding-top: 40px
 
 	&__inner
 		display: flex
@@ -15,6 +19,8 @@
 		color: #f8fdff
 		margin-top: 16px
 		letter-spacing: 0.5px
+		+md
+			font-size: 14px
 
 	&__links-list
 		display: flex
@@ -27,6 +33,14 @@
 				font-size: 24px
 				color: $sky-blue
 				margin-right: 6px
+		+md
+			&:not(:last-child)
+				&:after
+					font-size: 20px
+		+sm
+			&:not(:last-child)
+				&:after
+					font-size: 16px
 
 	&__links-link
 		font-size: 24px
@@ -35,6 +49,10 @@
 			opacity: 0.7
 		&:active
 			opacity: 0.85
+		+md
+			font-size: 20px
+		+sm
+			font-size: 16px
 
 	&__obj-list
 		position: relative
@@ -42,18 +60,36 @@
 		max-width: 1068px
 		margin: 0 auto
 		height: 373px
+		+md
+			max-width: 767px
+		+sm
+			display: flex
+			flex-wrap: wrap
+			height: 273px
 
 	&__obj-item
 		position: absolute
+		+sm
+			position: static
+			width: 25%
+			display: flex
+			justify-content: center
+			align-items: center
+
+	&__obj-wrapper
 		width: 96px
 		height: 96px
 		background-color: #2e3b44
 		border-radius: 8px
-		box-shadow: 0px 5px 36px 0px rgba($black, 0.75)
+		box-shadow: 0 5px 36px 0 rgba($black, 0.75)
 		&:hover
 			opacity: 0.7
 		&:active
 			opacity: 0.85
+		+md
+			width: 64px
+			height: 64px
+
 
 	&__obj_android-tv
 		top: 21px
@@ -61,6 +97,11 @@
 		.topic__obj-title
 			top: 28px
 			left: -70px
+		+md
+			top: 70px
+			.topic__obj-title
+				top: 14px
+				left: -55px
 
 	&__obj_apple-tv
 		top: 69px
@@ -68,6 +109,13 @@
 		.topic__obj-title
 			bottom: -16px
 			left: 24px
+		+md
+			top: 90px
+			left: 320px
+			.topic__obj-title
+				width: 42px
+				bottom: -10px
+				left: 13px
 
 	&__obj_web
 		top: 43px
@@ -75,6 +123,12 @@
 		.topic__obj-title
 			top: 24px
 			right: -30px
+		+md
+			top: 78px
+			right: 210px
+			.topic__obj-title
+				top: 14px
+				right: -24px
 
 	&__obj_beacons
 		top: 43px
@@ -83,6 +137,11 @@
 			text-align: center
 			bottom: -31px
 			left: 31px
+		+md
+			top: 78px
+			.topic__obj-title
+				bottom: -22px
+				left: 16px
 
 	&__obj_iot
 		bottom: 118px
@@ -90,6 +149,12 @@
 		.topic__obj-title
 			top: 19px
 			left: -29px
+		+md
+			right: 258px
+			.topic__obj-title
+				top: 14px
+				left: -20px
+
 
 	&__obj_phones-tablets
 		bottom: 102px
@@ -99,6 +164,11 @@
 			right: -76px
 			width: 75px
 			text-align: center
+		+md
+			left: 84px
+			.topic__obj-title
+				top: 14px
+				right: -65px
 
 	&__obj_iphone-ipad
 		bottom: 32px
@@ -106,6 +176,10 @@
 		.topic__obj-title
 			top: -19px
 			right: 10px
+		+md
+			left: 286px
+			.topic__obj-title
+				top: -24px
 
 	&__obj_wearables
 		bottom: 41px
@@ -113,6 +187,11 @@
 		.topic__obj-title
 			bottom: 32px
 			left: -69px
+		+md
+			right: 86px
+			.topic__obj-title
+				bottom: 14px
+				left: -55px
 
 
 	//&__obj_
@@ -122,12 +201,26 @@
 
 	&__obj-icon
 
+	&__obj-image
+		width: 96px
+		height: 96px
+		+md
+			width: 64px
+			height: 64px
+
 	&__obj-title
 		position: absolute
 		font-size: 10px
 		color: $sky-blue
 		text-transform: uppercase
 		letter-spacing: 0.5px
+		+md
+			font-size: 8px
+		+sm
+			position: static
+			display: block
+			text-align: center
+			max-width: 64px
 
 	&__descr
 		margin-top: 2px
