@@ -1,0 +1,25 @@
+<!-- begin workflow -->
+{% import "data/workflow-data.html" as data %}
+<div class="workflow">
+  <div class="workflow__inner inner inner__md">
+    <h2 class="workflow__title title">Workflow</h2>
+    <ul class="workflow__list">
+      {% for item in data.list %}
+        <li class="workflow__item">
+          <a href="#" class="workflow__link">
+						<span class="workflow__icon">
+							<img class="workflow__image" src="./img/{{ item.icon }}.svg" alt="workflow image">
+						</span>
+            <span class="workflow__name">{{ item.name }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <ul class="workflow__arrows-list">
+      {% for item in data.arrows %}
+        <li class="workflow__arrows-item workflow__arrows-item_{{ item.icon }}"></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<!-- end workflow -->

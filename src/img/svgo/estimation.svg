@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>AE6A2E84-84BF-4220-B8A2-91A546C604B3</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="100%" x2="128.636821%" y2="-26.2220023%" id="linearGradient-1">
+            <stop stop-color="#4AC2FF" offset="0%"></stop>
+            <stop stop-color="#4BB7FF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic-/-estimation" fill-rule="nonzero">
+            <g id="ic-/-Estimation">
+                <path d="M24.951243,25.8252072 C23.7501381,27.0263121 23.7501381,28.9736879 24.951243,30.1747928 L35.8252072,41.048757 C37.0263121,42.2498619 38.9736879,42.2498619 40.1747928,41.048757 L51.048757,30.1747928 C52.2498619,28.9736879 52.2498619,27.0263121 51.048757,25.8252072 L40.1747928,14.951243 C38.9736879,13.7501381 37.0263121,13.7501381 35.8252072,14.951243 L24.951243,25.8252072 Z" id="Rectangle-14" stroke="#D3D9DD" stroke-width="4.10082869"></path>
+                <path d="M26.4398461,9.42483092 L41.5751691,24.5601539 C43.4749436,26.4599284 43.4749436,29.5400716 41.5751691,31.4398461 L26.4398461,46.5751691 C24.5400716,48.4749436 21.4599284,48.4749436 19.5601539,46.5751691 L4.42483092,31.4398461 C2.52505636,29.5400716 2.52505636,26.4599284 4.42483092,24.5601539 L19.5601539,9.42483092 C21.4599284,7.52505636 24.5400716,7.52505636 26.4398461,9.42483092 Z" id="Rectangle-14-Copy" fill="url(#linearGradient-1)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

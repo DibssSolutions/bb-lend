@@ -1,0 +1,105 @@
+.workflow
+	margin-top: 80px
+	margin-bottom: 500px
+
+	&__inner
+		display: flex
+		flex-direction: column
+		align-items: center
+		box-sizing: content-box
+
+	&__title
+
+	&__list
+		justify-content: space-between
+		display: flex
+		width: 100%
+		margin-top: 40px
+		max-width: 1016px
+		padding: 0 16px
+		box-sizing: border-box
+		+sm
+			padding: 0 12px
+			margin-top: 0
+			flex-wrap: wrap
+
+	&__item
+		min-height: 83px
+		+sm
+			position: relative
+			width: 25%
+			flex-grow: 1
+			margin-top: 40px
+			&:not(:last-child)
+				&:after
+					content: ""
+					position: absolute
+					width: 8px
+					height: 8px
+					right: 0
+					top: 50%
+					border-top: 3px $sky-blue solid
+					border-right: 3px $sky-blue solid
+					transform: translateY(-50%) rotate(45deg)
+
+
+	&__link
+		position: relative
+		display: flex
+		flex-direction: column
+
+	&__icon
+		display: flex
+		justify-content: center
+
+	&__image
+		+sm
+			width: 42px
+			height: 42px
+
+	&__name
+		+notosans
+		position: relative
+		left: 50%
+		transform: translateX(-50%)
+		margin-top: 5px
+		font-size: 16px
+		font-weight: 700
+		color: $greyish-brown
+		+md
+			font-size: 14px
+		+sm
+			font-size: 12px
+			text-align: center
+
+	&__arrows-list
+		margin-top: 18px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		width: 100%
+		+sm
+			display: none
+
+
+	&__arrows-item
+		height: 9px
+
+	&__arrows-item_arrow-big
+		width: 18%
+		background: url("../img/arrow-big.svg") no-repeat center
+		background-size: contain
+
+	&__arrows-item_arrow
+		width: 15%
+		background: url("../img/arrow.svg") no-repeat center
+		background-size: contain
+
+	&__arrows-item_lines
+		background: url("../img/dotted-line.svg") no-repeat center
+		background-size: contain
+		height: 3px
+		width: 7%
+
+
+

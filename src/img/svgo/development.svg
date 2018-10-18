@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>8335F8CB-CC68-4F0C-9BFF-16FC0CE792A0</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="-53.8879395%" y1="50%" x2="148.266602%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#4AC2FF" offset="0%"></stop>
+            <stop stop-color="#4BB7FF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic-/-development" fill-rule="nonzero">
+            <g id="Group-7">
+                <g transform="translate(6.000000, 5.000000)">
+                    <path d="M21.9350288,23.9350288 L37.4165103,23.9350288 C39.3597344,23.9350288 40.9350288,25.5103232 40.9350288,27.4535474 L40.9350288,42.9350288" id="Rectangle-14" stroke="#D3D9DD" stroke-width="4" stroke-linecap="round" transform="translate(31.435029, 33.435029) rotate(-315.000000) translate(-31.435029, -33.435029) "></path>
+                    <path d="M3.93502884,3.93502884 L19.4165103,3.93502884 C21.3597344,3.93502884 22.9350288,5.51032324 22.9350288,7.45354736 L22.9350288,22.9350288" id="Rectangle-14" stroke="#D3D9DD" stroke-width="4" stroke-linecap="round" transform="translate(13.435029, 13.435029) rotate(-135.000000) translate(-13.435029, -13.435029) "></path>
+                    <rect id="Rectangle-14-Copy" fill="url(#linearGradient-1)" x="7" y="9" width="32" height="32" rx="5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

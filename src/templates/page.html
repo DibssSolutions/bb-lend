@@ -7,55 +7,7 @@ title: Index page
 
   {% include "partials/_topic.html" %}
   {% include "partials/_achievement.html" %}
-
-	<!-- begin workflow -->
-	<div class="workflow">
-		<div class="workflow__inner inner">
-			<div class="workflow__title title">Workflow</div>
-			<div class="workflow__list">
-				{% for item in [
-					{
-						icon: 'estimation',
-						name: 'Estimation'
-					},
-					{
-						icon: 'scope',
-						name: 'Scope'
-					},
-					{
-						icon: 'strategy',
-						name: 'Strategy'
-					},
-					{
-						icon: 'design',
-						name: 'Design'
-					},
-					{
-						icon: 'development',
-						name: 'Development'
-					},
-					{
-						icon: 'release',
-						name: 'Release'
-					},
-					{
-						icon: 'growth',
-						name: 'Growth'
-					}
-				] %}
-				<div class="workflow__item">
-					<a href="#" class="workflow__link">
-						<span class="workflow__icon">
-							<img src="./img/{{ item.icon }}" alt="img">
-						</span>
-						<span class="workflow__name">{{ item.name }}</span>
-					</a>
-				</div>
-				{% endfor %}
-			</div>
-		</div>
-	</div>
-	<!-- end workflow -->
+  {% include "partials/_workflow.html" %}
 
 {% endblock %}
 

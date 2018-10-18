@@ -1,0 +1,15 @@
+<svg width="56" height="56" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        AE6A2E84-84BF-4220-B8A2-91A546C604B3
+    </title>
+    <defs>
+        <linearGradient x1="0%" y1="100%" x2="128.637%" y2="-26.222%" id="a">
+            <stop stop-color="#4AC2FF" offset="0%"/>
+            <stop stop-color="#4BB7FF" stop-opacity="0" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g fill-rule="nonzero" fill="none">
+        <path d="M24.951 25.825a3.076 3.076 0 0 0 0 4.35l10.874 10.874a3.076 3.076 0 0 0 4.35 0l10.874-10.874a3.076 3.076 0 0 0 0-4.35L40.175 14.951a3.076 3.076 0 0 0-4.35 0L24.951 25.825z" stroke="#D3D9DD" stroke-width="4.101"/>
+        <path d="M26.44 9.425L41.575 24.56c1.9 1.9 1.9 4.98 0 6.88L26.44 46.575c-1.9 1.9-4.98 1.9-6.88 0L4.425 31.44c-1.9-1.9-1.9-4.98 0-6.88L19.56 9.425c1.9-1.9 4.98-1.9 6.88 0z" fill="url(#a)"/>
+    </g>
+</svg>
