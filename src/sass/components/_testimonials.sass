@@ -1,0 +1,86 @@
+.testimonials
+	background-color: $pale-grey
+	padding-top: 32px
+	padding-bottom: 88px
+
+	&__inner
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	&__title
+
+	&__descr
+		+notosans
+		font-size: 16px
+
+	&__reward
+		margin-top: 15px
+
+	&__list
+		width: 100%
+		max-width: 1238px
+		margin: 30px auto 0
+		display: flex
+		justify-content: space-between
+
+	&__item
+		position: relative
+		display: flex
+		flex-direction: column
+		width: 33%
+		max-width: 386px
+		padding: 24px 30px 32px 16px
+		background-color: rgba($silver, 0.2)
+
+	&__item_active
+		box-shadow: 0 5px 5px 0 rgba(#8798A4, 0.15)
+		background-color: $white
+
+	&__quote
+		position: absolute
+		top: 12px
+		left: 10px
+
+		.icon
+			width: 37px
+			height: 37px
+			fill: $silver
+
+	&__item-text
+		+notosans
+		font-size: 14px
+		letter-spacing: 0.5px
+		line-height: 1.5
+		min-height: 105px
+
+	&__item-wrapper
+		display: flex
+		justify-content: center
+		height: 48px
+		margin-top: 10px
+
+	&__item-image
+		margin-right: 10px
+		width: 48px
+		height: 48px
+		border-radius: 50%
+
+	&__item-credentials
+		display: flex
+		flex-direction: column
+		justify-content: center
+		margin-left: 6px
+
+	&__item-name
+		+notosans
+		font-size: 14px
+		font-weight: 700
+		color: #333
+
+	&__item-position
+		text-align: center
+		font-size: 10px
+		color: #555
+		text-transform: uppercase
+

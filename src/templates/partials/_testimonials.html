@@ -1,0 +1,30 @@
+<!-- testimonials begin -->
+{% import "data/testimonials-data.html" as data %}
+<section class="testimonials">
+  <div class="testimonials__inner inner">
+    <h2 class="testimonials__title title">Testimonials</h2>
+    <p class="testimonials__descr">and reviews</p>
+    <img class="testimonials__reward" src="/img/clutch.png" alt="Clutch reward">
+    <ul class="testimonials__list">
+      {% for item in data.list %}
+        <li class="testimonials__item testimonials__item_active">
+          <div class="testimonials__quote">
+            {{ mixins.icon("citates") }}
+          </div>
+          <p class="testimonials__item-text">{{ item.text }}</p>
+          <div class="testimonials__item-wrapper">
+            {% if item.avatar %}
+              <img class="testimonials__item-image" src="/img/{{ item.avatar }}.png" alt="Reviewer avatar">
+            {% endif %}
+            <div class="testimonials__item-credentials">
+              <p class="testimonials__item-name">{{ item.name }}</p>
+              <p class="testimonials__item-position">{{ item.position }}</p>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<!-- testimonials end -->
+
