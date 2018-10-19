@@ -1,0 +1,24 @@
+<!-- begin works -->
+{% import "data/works-data.html" as data %}
+<section class="works">
+  <div class="works__inner inner inner__md">
+    <h2 class="works__title title">Best Works</h2>
+    <p class="works__descr">Highlights</p>
+    <ul class="works__list">
+      {% for item in data.list %}
+        <li class="works__item">
+          <p class="works__date">{{ item.date | safe}}</p>
+          <img class="works__img" src="img/{{ item.image }}.png" alt="Works image">
+          <div class="works__item-wrapper">
+            <p class="works__tags">{{ item.tags }}</p>
+            <p class="works__name">{{ item.title }}</p>
+            <p class="works__item-descr">{{ item.descr }}</p>
+            <p class="works__position">{{ item.position }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<!-- end works -->

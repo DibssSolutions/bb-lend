@@ -1,0 +1,89 @@
+.works
+	margin-top: 80px
+
+	&__inner
+		max-width: 1144px
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	&__title
+
+	&__descr
+		+notosans
+		font-size: 16px
+		color: $cool-grey-two
+		letter-spacing: 1px
+		line-height: 1.5
+		+md
+			font-size: 14px
+
+	&__list
+		margin-top: 40px
+
+	&__item
+		display: flex
+		margin: 0 48px
+		position: relative
+		&:before
+			content: ''
+			display: block
+			width: 10000vw
+			transform: translateX(-50%)
+			height: 2px
+			position: absolute
+			background-color: $silver
+
+	&__date
+		text-transform: uppercase
+		writing-mode: vertical-lr
+		transform: rotate(180deg)
+		font-size: 10px
+		position: absolute
+		left: -44px
+		top: 40px
+		letter-spacing: 0.6px
+		color: $cool-grey-two
+
+	&__date_blue
+		color: $light-navy
+
+	&__img
+		max-width: 728px
+		height: auto
+		width: 70%
+		align-self: center
+
+	&__item-wrapper
+		padding-top: 30%
+		margin-left: 36px
+		margin-bottom: 16px
+		display: flex
+		position: relative
+		flex-direction: column
+
+	&__tags
+		line-height: 2
+		letter-spacing: 0.5px
+		text-transform: uppercase
+		font-size: 10px
+		margin-bottom: 4px
+
+	&__name
+		font-size: 34px
+		margin-bottom: 4px
+		letter-spacing: 0.5px
+
+	&__item-descr
+		+notosans
+		font-size: 14px
+		line-height: 1.75
+		letter-spacing: 0.5px
+
+	&__position
+		position: absolute
+		top: 41px
+		left: 0
+
+
+
