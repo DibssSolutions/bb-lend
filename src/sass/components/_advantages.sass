@@ -1,0 +1,99 @@
+.advantages
+	margin-top: 80px
+	padding-top: 80px
+	padding-bottom: 80px
+	background: $light-navy url("../img/advantages.svg") no-repeat center
+	background-size: cover
+	+md
+		margin-top: 60px
+		padding-bottom: 60px
+		padding-top: 60px
+
+	&__inner
+		display: flex
+		flex-direction: column
+		align-items: center
+		max-width: 1096px
+
+	&__title
+
+	&__descr
+		+notosans
+		font-size: 16px
+		color: $white
+
+	&__list
+		margin: 0 24px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		+sm
+			margin: 0 12px
+			justify-content: center
+
+
+	&__item
+		position: relative
+		background-color: $white
+		border-radius: 4px
+		margin-top: 40px
+		min-height: 88px
+		display: flex
+		width: 48.65%
+		&:after
+			content: ''
+			position: absolute
+			right: 26px
+			top: 50%
+			transform: translateY(-50%)
+			width: 14px
+			height: 10px
+			background: url("../img/advantage-arrow.svg") no-repeat center
+		&:hover
+			opacity: 0.7
+		&:active
+			opacity: 0.85
+		+md
+			&:after
+				right: 16px
+		+sm
+			margin-top: 20px
+			width: 100%
+			max-width: 480px
+
+	&__link
+		display: flex
+		align-items: center
+		padding-left: 26px
+		padding-right: 44px
+		+md
+			padding-left: 16px
+			padding-right: 32px
+
+	&__image
+		width: 48px
+		height: 48px
+		+sm
+			width: 32px
+			height: 32px
+
+	&__text-wrapper
+		display: flex
+		flex-direction: column
+		justify-content: center
+		+notosans
+		padding: 14px 30px 14px 24px
+		letter-spacing: 0.5px
+		+md
+			padding: 14px 0 14px 16px
+
+	&__item-title
+		color: #3c3c3c
+		font-weight: 400
+		font-size: 16px
+		letter-spacing: 0
+		line-height: 1.45
+
+	&__item-descr
+		color: $cool-grey-two
+		font-size: 14px
