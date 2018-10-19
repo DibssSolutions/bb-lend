@@ -33,6 +33,11 @@
 			height: 2px
 			position: absolute
 			background-color: $silver
+		+md
+			flex-direction: column
+			margin: 0 0 16px 48px
+		+sm
+			margin: 0 0 16px 36px
 
 	&__date
 		text-transform: uppercase
@@ -44,6 +49,8 @@
 		top: 40px
 		letter-spacing: 0.6px
 		color: $cool-grey-two
+		+sm
+			left: -32px
 
 	&__date_blue
 		color: $light-navy
@@ -53,6 +60,9 @@
 		height: auto
 		width: 70%
 		align-self: center
+		+md
+			width: 100%
+			max-width: none
 
 	&__item-wrapper
 		padding-top: 30%
@@ -61,8 +71,12 @@
 		display: flex
 		position: relative
 		flex-direction: column
+		+md
+			margin: 0
+			padding: 0
 
 	&__tags
+		color: $greyish-brown
 		line-height: 2
 		letter-spacing: 0.5px
 		text-transform: uppercase
@@ -70,20 +84,33 @@
 		margin-bottom: 4px
 
 	&__name
+		color: #3c3c3c
 		font-size: 34px
 		margin-bottom: 4px
 		letter-spacing: 0.5px
+		+md
+			font-size: 28px
+		+sm
+			font-size: 24px
+
 
 	&__item-descr
 		+notosans
 		font-size: 14px
 		line-height: 1.75
 		letter-spacing: 0.5px
+		color: #333
 
 	&__position
 		position: absolute
 		top: 41px
 		left: 0
+		+md
+			top: -24px
+			left: -44px
+		+sm
+			left: -32px
+
 
 
 
