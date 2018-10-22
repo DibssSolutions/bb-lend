@@ -6,15 +6,15 @@ $slick-font-path: "./fonts/" !default;
 $slick-font-family: "slick" !default;
 $slick-loader-path: "./" !default;
 $slick-arrow-color: white !default;
-$slick-dot-color: black !default;
-$slick-dot-color-active: $slick-dot-color !default;
+$slick-dot-color: $silver !default;
+$slick-dot-color-active: $light-navy !default;
 $slick-prev-character: "\2190" !default;
 $slick-next-character: "\2192" !default;
 $slick-dot-character: "\2022" !default;
-$slick-dot-size: 6px !default;
+$slick-dot-size: 34px !default;
 $slick-opacity-default: 0.75 !default;
-$slick-opacity-on-hover: 1 !default;
-$slick-opacity-not-active: 0.25 !default;
+$slick-opacity-on-hover: 0.25 !default;
+$slick-opacity-not-active: 1 !default;
 
 @function slick-image-url($url) {
     @if function-exists(image-url) {
@@ -40,6 +40,11 @@ $slick-opacity-not-active: 0.25 !default;
     .slick-loading & {
         background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
     }
+}
+
+.slick-slide > div {
+    display: flex;
+    justify-content: center;
 }
 
 /* Icons */
@@ -131,7 +136,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-dots {
     position: absolute;
-    bottom: -25px;
+    bottom: -44px;
     list-style: none;
     display: block;
     text-align: center;
@@ -143,9 +148,12 @@ $slick-opacity-not-active: 0.25 !default;
         display: inline-block;
         height: 20px;
         width: 20px;
-        margin: 0 5px;
+        margin: 0 10px;
         padding: 0;
         cursor: pointer;
+        @include sm {
+            margin: 0 5px;
+        }
         button {
             border: 0;
             background: transparent;

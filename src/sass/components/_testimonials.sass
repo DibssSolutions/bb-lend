@@ -1,7 +1,7 @@
 .testimonials
 	background-color: $pale-grey
 	padding-top: 32px
-	padding-bottom: 88px
+	padding-bottom: 47px
 
 	&__inner
 		display: flex
@@ -16,6 +16,11 @@
 
 	&__reward
 		margin-top: 15px
+		width: 130px
+		height: 130px
+		+sm
+			width: 90px
+			height: 90px
 
 	&__list
 		width: 100%
@@ -28,10 +33,12 @@
 		position: relative
 		display: flex
 		flex-direction: column
-		width: 33%
-		max-width: 386px
+		max-width: 98%
 		padding: 24px 30px 32px 16px
 		background-color: rgba($silver, 0.2)
+		margin-bottom: 10px
+		+md
+			max-width: 90%
 
 	&__item_active
 		box-shadow: 0 5px 5px 0 rgba(#8798A4, 0.15)
@@ -83,4 +90,5 @@
 		font-size: 10px
 		color: #555
 		text-transform: uppercase
+
 
