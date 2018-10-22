@@ -64,6 +64,7 @@
     "through2": "^2.0.1",
     "webpack": "^2.2.1",
     "webpack-bundle-analyzer": "^1.5.3",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "masonry-layout": "^4.2.2"
   }
 }

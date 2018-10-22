@@ -1,0 +1,85 @@
+.team
+	padding-top: 80px
+
+	&__inner
+
+	&__title
+		text-align: center
+
+	&__descr
+		+notosans
+		font-size: 16px
+		color: $cool-grey-two
+		line-height: 1.6
+		max-width: 480px
+		text-align: center
+		margin: 0 auto
+
+	&__btn
+		+notosans
+		margin: 40px auto
+
+	&__image
+		height: 100%
+		width: 100%
+		object-fit: cover
+
+	&__grid-wrapper
+		max-width: 1074px
+		margin: 0 auto
+
+	&__grid
+		margin: 0 15px
+
+	&__gutter-sizer
+		width: 1.532%
+		+sm
+			width: 2%
+		+r(479)
+			width: 4%
+
+	&__brick
+		width: 18.775%
+		float: left
+		margin-bottom: 16px
+		border-radius: 2px
+		overflow: hidden
+
+		+sm
+			width: 32%
+		+r(479)
+			width: 48%
+		&_323h
+			height: 323px
+			background-color: red
+		&_208h
+			height: 206px
+			background-color: $golden
+		&_180h
+			height: 180px
+			background-color: $silver
+		&_160h
+			height: 160px
+			background-color: $dark-mint
+		&_130h
+			height: 130px
+			background-color: #124567
+		&_107h
+			height: 107px
+			background-color: $light-navy
+
+		&_gold
+			+r(479)
+				height: 90px
+
+		&_blue
+			+sm
+				height: 196px
+			+r(479)
+				height: 235px
+
+		&_green
+			+sm
+				height: 206px
+			+r(479)
+				height: 176px

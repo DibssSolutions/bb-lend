@@ -1,0 +1,26 @@
+<!-- team begin -->
+{% import "data/team-data.html" as data %}
+<section class="team">
+  <div class="team__inner inner">
+    <h2 class="team__title title">Meet theTeam</h2>
+    <p class="team__descr">We’re a team of passionate and open-minded mobile development experts eager to help you
+      change the world to the better with your app ideas.</p>
+    <a href="#" class="team__btn btn">Join Our Team</a>
+
+    <div class="team__grid-wrapper">
+      <div class="team__grid">
+        <div class="team__gutter-sizer"></div>
+        {% for item in data.list %}
+          <div
+            class="team__brick team__brick team__brick_{{ item.height }}h {% if item.color %} team__brick_{{ item.color }} {% endif %}">
+            {% if item.image %}
+              <img src="img/{{ item.image }}.png" alt="team Image" class="team__image">
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- team end -->
