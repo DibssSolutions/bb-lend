@@ -3,7 +3,7 @@
 	padding-top: 32px
 	padding-bottom: 47px
 
-	&__inner
+	&__wrapper
 		display: flex
 		flex-direction: column
 		align-items: center
@@ -30,6 +30,7 @@
 		justify-content: space-between
 
 	&__item
+		transition: 400ms
 		position: relative
 		display: flex
 		flex-direction: column
@@ -41,6 +42,7 @@
 			max-width: 90%
 
 	&__item_active
+		transition: 400ms
 		box-shadow: 0 5px 5px 0 rgba(#8798A4, 0.15)
 		background-color: $white
 
