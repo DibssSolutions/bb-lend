@@ -1,8 +1,8 @@
 <!-- begin achieve -->
 {% import "data/achievement-data.html" as data %}
 <section class="achievement">
-  <div class="achievement__inner inner inner__md">
-    <h2 class="achievement__title title">Achieve more</h2>
+  <div class="achievement__wrapper wrapper">
+    <h2 class="achievement__title head">Achieve more</h2>
     <div class="achievement__descr">Hop us in at any stage:</div>
     <ul class="achievement__achieve-list">
       {% for item in data.list %}
@@ -11,7 +11,7 @@
               <div class="achievement__achieve-icon">
                 <img class="achievement__achieve-image" src="img/{{ item.icon }}.svg" alt="Achieve image"/>
               </div>
-              <h4 class="achievement__achieve-title title__sm">{{ item.title }}</h4>
+              <h4 class="achievement__achieve-title head__sm">{{ item.title }}</h4>
             </div>
             <ul class="achievement__descr-list">
               {% for achieves in item.list %}
