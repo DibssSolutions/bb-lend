@@ -6,11 +6,15 @@
 		background-color: #165c8a
 
 	&__inner
+		max-width: 1076px
 
 	&__info
 		padding: 40px 0
+		margin: 0 16px
 		display: flex
 		flex-wrap: wrap
+		+sm
+			padding-bottom: 20px
 
 	&__contacts
 		width: 100%
@@ -19,19 +23,34 @@
 		font-size: 21px
 		color: $sky-blue
 		font-weight: 400
+		+sm
+			text-align: center
 
 	&__contacts-list
 		display: flex
+		flex-wrap: wrap
 		margin-top: 13px
+		justify-content: center
+		+sm
+			justify-content: center
 
 	&__contacts-item
 		display: flex
 		align-items: center
-		margin-right: 71px
+		&:not(:last-child)
+			margin-right: 71px
 		.icon
 			width: 24px
 			height: 24px
 			fill: $white
+		&:hover
+			opacity: 0.7
+		&:active
+			opacity: 0.85
+		+sm
+			margin: 0 16px
+			&:not(:last-child)
+				margin-right: 16px
 
 	&__contacts-link
 		color: $white
@@ -41,13 +60,25 @@
 	&__social
 		margin-top: 40px
 		width: 51%
+		+sm
+			width: 100%
 
 	&__social-list
 		margin-top: 16px
 		display: flex
+		+sm
+			justify-content: space-around
+			max-width: 390px
+			margin: 16px auto 0
 
 	&__social-item
 		margin-right: 25px
+		&:hover
+			opacity: 0.7
+		&:active
+			opacity: 0.85
+		+sm
+			margin-right: 0
 
 	&__social-link
 		.icon
@@ -58,27 +89,61 @@
 	&__subscribe
 		margin-top: 40px
 		width: 49%
+		+sm
+			width: 100%
 
 	&__subscribe-form
 		margin-top: 7px
 		display: flex
+		+sm
+			flex-wrap: wrap
+			justify-content: center
 
 	&__subscribe-mail
+		+notosans
+		font-size: 16px
+		padding: 0 16px
 		width: 100%
 		max-width: 384px
+		color: $cool-grey-two
+		border-radius: 4px
+		&::placeholder
+			color: $silver
+		+sm
+			max-width: none
+			min-height: 56px
 
 	&__btn
+		+notosans
+		max-width: 118px
 		margin-left: 8px
+		+sm
+			margin-top: 12px
 
 	&__copyrights
 		display: flex
 		justify-content: space-between
+		padding: 23px 0 8px
+		margin: 0 16px
 
 	&__copyrights-text
+		+notosans
+		font-size: 14px
+		letter-spacing: 0.8px
 
 	&__technical-list
 		display: flex
 
 	&__technical-item
+		margin-left: 24px
 
 	&__technical-text
+		vertical-align: top
+		color: $white
+		+notosans
+		font-size: 14px
+		letter-spacing: 0.8px
+		&:hover
+			opacity: 0.7
+		&:active
+			opacity: 0.85

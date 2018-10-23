@@ -13,17 +13,17 @@
                 <use xlink:href="#a"/>
             </mask>
             <use fill="#176AA2" fill-rule="nonzero" xlink:href="#a"/>
-            <path d="M-78.5 88.5L76.524-66.524" stroke="#1A6292" stroke-width="16" stroke-linecap="square" mask="url(#b)"/>
-            <path d="M34.5 166.5L189.524 11.476" stroke="#1A6292" stroke-width="16" stroke-linecap="square" mask="url(#b)"/>
-            <path d="M-53.5 111.5L101.524-43.524" stroke="#1A6292" stroke-width="16" stroke-linecap="square" mask="url(#b)"/>
-            <path d="M59.5 189.5L214.524 34.476" stroke="#1A6292" stroke-width="16" stroke-linecap="square" mask="url(#b)"/>
-            <path d="M-24.5 129.5L130.524-25.524" stroke="#1A6292" stroke-width="16" stroke-linecap="square" mask="url(#b)"/>
-            <path d="M88.5 207.5L243.524 52.476" stroke="#1A6292" stroke-width="16" stroke-linecap="square" mask="url(#b)"/>
-            <path d="M11.5 140.5L166.524-14.524" stroke="#1A6292" stroke-width="16" stroke-linecap="square" mask="url(#b)"/>
-            <path d="M-27.511 374.511L257.524 89.476" stroke="#1A6292" stroke-width="16" stroke-linecap="square" mask="url(#b)"/>
-            <path d="M-15.002 411.002l260.526-260.526" stroke="#1A6292" stroke-width="16" stroke-linecap="square" mask="url(#b)"/>
-            <path d="M-3.002 451.002l260.526-260.526" stroke="#1A6292" stroke-width="16" stroke-linecap="square" mask="url(#b)"/>
-            <path d="M46.998 451.002l260.526-260.526" stroke="#1A6292" stroke-width="16" stroke-linecap="square" mask="url(#b)"/>
+            <path d="M-78.5 88.5L76.524-66.524" stroke="#1A6292" stroke-width="16" stroke-linecap="square" fill-rule="nonzero" mask="url(#b)"/>
+            <path d="M34.5 166.5L189.524 11.476" stroke="#1A6292" stroke-width="16" stroke-linecap="square" fill-rule="nonzero" mask="url(#b)"/>
+            <path d="M-53.5 111.5L101.524-43.524" stroke="#1A6292" stroke-width="16" stroke-linecap="square" fill-rule="nonzero" mask="url(#b)"/>
+            <path d="M59.5 189.5L214.524 34.476" stroke="#1A6292" stroke-width="16" stroke-linecap="square" fill-rule="nonzero" mask="url(#b)"/>
+            <path d="M-24.5 129.5L130.524-25.524" stroke="#1A6292" stroke-width="16" stroke-linecap="square" fill-rule="nonzero" mask="url(#b)"/>
+            <path d="M88.5 207.5L243.524 52.476" stroke="#1A6292" stroke-width="16" stroke-linecap="square" fill-rule="nonzero" mask="url(#b)"/>
+            <path d="M11.5 140.5L166.524-14.524" stroke="#1A6292" stroke-width="16" stroke-linecap="square" fill-rule="nonzero" mask="url(#b)"/>
+            <path d="M-27.511 374.511L257.524 89.476" stroke="#1A6292" stroke-width="16" stroke-linecap="square" fill-rule="nonzero" mask="url(#b)"/>
+            <path d="M-15.002 411.002l260.526-260.526" stroke="#1A6292" stroke-width="16" stroke-linecap="square" fill-rule="nonzero" mask="url(#b)"/>
+            <path d="M-3.002 451.002l260.526-260.526" stroke="#1A6292" stroke-width="16" stroke-linecap="square" fill-rule="nonzero" mask="url(#b)"/>
+            <path d="M46.998 451.002l260.526-260.526" stroke="#1A6292" stroke-width="16" stroke-linecap="square" fill-rule="nonzero" mask="url(#b)"/>
         </g>
     </g>
 </svg>
