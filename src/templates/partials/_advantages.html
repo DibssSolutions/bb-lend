@@ -8,7 +8,7 @@
       {% for item in data.list %}
         <li class="advantages__item">
           <a href="#" class="advantages__link">
-            <img class="advantages__image" src="/img/{{ item.icon }}.svg" alt="Advantage image"/>
+            {{ item.icon | safe }}
             <div class="advantages__text-wrapper">
               <h4 class="advantages__item-title">{{ item.title }}</h4>
               <p class="advantages__item-descr">{{ item.text }}</p>
