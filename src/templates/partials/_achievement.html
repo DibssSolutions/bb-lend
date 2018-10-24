@@ -7,21 +7,21 @@
     <ul class="achievement__achieve-list">
       {% for item in data.list %}
         <li class="achievement__achieve-item">
-            <div class="achievement__head">
-              <div class="achievement__achieve-icon">
-                <img class="achievement__achieve-image" src="img/{{ item.icon }}.svg" alt="Achieve image"/>
-              </div>
-              <h4 class="achievement__achieve-title head__sm">{{ item.title }}</h4>
+          <div class="achievement__head">
+            <div class="achievement__achieve-icon">
+              {{ item.icon | safe}}
             </div>
-            <ul class="achievement__descr-list">
-              {% for achieves in item.list %}
-                <li class="achievement__descr-item">
-                  <p class="achievement__descr-text">
-                    {{ achieves.text | safe }}
-                  </p>
-                </li>
-              {% endfor %}
-            </ul>
+            <h4 class="achievement__achieve-title head__sm">{{ item.title }}</h4>
+          </div>
+          <ul class="achievement__descr-list">
+            {% for achieves in item.list %}
+              <li class="achievement__descr-item">
+                <p class="achievement__descr-text">
+                  {{ achieves.text | safe }}
+                </p>
+              </li>
+            {% endfor %}
+          </ul>
         </li>
       {% endfor %}
     </ul>

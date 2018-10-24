@@ -8,7 +8,7 @@
         <li class="workflow__item">
           <a href="#" class="workflow__link">
 						<span class="workflow__icon">
-							<img class="workflow__image" src="./img/{{ item.icon }}.svg" alt="workflow image">
+							{{ item.icon | safe }}
 						</span>
             <span class="workflow__name">{{ item.name }}</span>
           </a>
