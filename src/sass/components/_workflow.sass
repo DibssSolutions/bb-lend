@@ -50,6 +50,13 @@
 	&__icon
 		display: flex
 		justify-content: center
+		svg
+			width: 56px
+			height: 56px
+		+md
+			svg
+				width: 42px
+				height: 42px
 
 	&__name
 		+notosans
@@ -78,19 +85,22 @@
 
 	&__arrows-item
 		height: 9px
+		position: relative
+		margin: 0 2px
+		svg
+			position: absolute
+			width: 100%
+			height: auto
 
 	&__arrows-item_arrow-big
 		width: 18%
-		background: url("../img/arrow-big.svg") no-repeat center
 		background-size: contain
 
 	&__arrows-item_arrow
 		width: 15%
-		background: url("../img/arrow.svg") no-repeat center
 		background-size: contain
 
 	&__arrows-item_lines
-		background: url("../img/dotted-line.svg") no-repeat center
 		background-size: contain
 		height: 3px
 		width: 7%
