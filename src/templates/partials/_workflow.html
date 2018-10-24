@@ -17,7 +17,9 @@
     </ul>
     <ul class="workflow__arrows-list">
       {% for item in data.arrows %}
-        <li class="workflow__arrows-item workflow__arrows-item_{{ item.icon }}"></li>
+        <li class="workflow__arrows-item workflow__arrows-item_{{ item.theme }}">
+          {{item.icon | safe}}
+        </li>
       {% endfor %}
     </ul>
   </div>

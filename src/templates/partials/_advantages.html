@@ -1,6 +1,9 @@
 <!-- advantages begin -->
 {% import "data/advantages-data.html" as data %}
 <section class="advantages">
+  <div class="advantages__background">
+    {{ data.background | safe }}
+  </div>
   <div class="advantages__wrapper wrapper">
     <h2 class="advantages__title head head__white">Advantages</h2>
     <p class="advantages__descr">Why us</p>
@@ -13,6 +16,9 @@
               <h4 class="advantages__item-title">{{ item.title }}</h4>
               <p class="advantages__item-descr">{{ item.text }}</p>
             </div>
+            <span class="advantages__arrow">
+            {{ data.arrow | safe }}
+          </span>
           </a>
         </li>
       {% endfor %}
