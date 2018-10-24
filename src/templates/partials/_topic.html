@@ -16,8 +16,9 @@
         <li class="topic__obj-item topic__obj_{{ item.name }}">
           <div class="topic__obj-wrapper">
             <a href="#" class="topic__obj-link">
-              <span class="topic__obj-icon"><img class="topic__obj-image" src="./img/{{ item.icon }}.svg"
-                                                 alt="topic image"></span>
+              <span class="topic__obj-icon">
+                {{ item.icon | safe }}
+              </span>
               <span class="topic__obj-title">{{ item.title }}</span>
             </a>
           </div>
