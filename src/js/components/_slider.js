@@ -26,9 +26,12 @@ $(slider).on({
   }
 });
 
-
 function decorateSlider(activeBreakpoint) {
   if (activeBreakpoint === null) {
+    $('.slick-slide:not(.slick-cloned) > div > .testimonials__item').each(function() {
+      $(this).removeClass('testimonials__item_active');
+    });
+
     $('.slick-active:not(.slick-cloned) > div > .testimonials__item').each(function(index) {
       $(this).removeClass('testimonials__item_active');
 
@@ -42,7 +45,6 @@ function decorateSlider(activeBreakpoint) {
     });
   }
 }
-
 
 $(slider).slick({
   slidesToShow: 3,
