@@ -1,0 +1,159 @@
+.advantage
+
+	&__inner
+		color: $dark
+		&:not(:first-child)
+			.advantage__wrapper_blue
+				padding-top: 190px
+		+sm
+			&:not(:first-child)
+				.advantage__wrapper_blue
+					padding-top: 50px
+
+	&__inner_blue
+		background-color: $ice-blue
+
+	&__line
+		position: absolute
+		top: 0
+		left: 50%
+		width: 1px
+		height: 100%
+		background-color: $silver
+		+sm
+			display: none
+
+	&__line_left
+		left: 26px
+
+	&__line_right
+		left: auto
+		right: 26px
+
+	&__wrapper
+		position: relative
+		padding: 52px 26px 88px
+		+sm
+			display: flex
+			flex-direction: column
+			align-items: center
+
+	&__wrapper_blue
+		padding-bottom: 224px
+		+sm
+			padding-bottom: 80px
+
+	&__title
+		position: relative
+		text-align: center
+		margin-top: 106px
+		margin-bottom: 164px
+
+	&__subtitle-wrapper
+		position: relative
+
+	&__subtitle-wrapper_right
+		text-align: right
+
+	&__subtitle
+		position: relative
+		text-transform: uppercase
+
+	&__icon
+		position: absolute
+		top: -158px
+		left: -23px
+
+	&__icon_right
+		top: -162px
+		left: auto
+		right: -150px
+
+	&__list
+		display: flex
+		justify-content: space-between
+		margin-top: 37px
+		+sm
+			margin-top: 0
+			justify-content: center
+			flex-wrap: wrap
+
+	&__item
+		position: relative
+		width: 30.7%
+		+sm
+			margin-top: 16px
+			max-width: 480px
+			width: 100%
+
+	&__item-title
+		font-size: 22px
+
+	&__item-subtitle
+		+notosans
+		line-height: 1.53
+		margin-top: 5px
+		font-size: 17px
+
+	&__item-text
+		+notosans
+		margin-top: 24px
+		color: $cool-grey-two
+		font-size: 16px
+		line-height: 1.75
+
+	&__inner-last
+		color: $dark
+
+	&__wrapper-last
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding: 40px 11px 40px
+
+	&__subtitle-last-wrapper
+		position: relative
+		padding-top: 10px
+
+	&__icon-last
+		top: -159px
+		left: -87px
+
+	&__description-last
+		text-align: center
+		position: relative
+
+	&__list-last
+		display: flex
+		justify-content: space-between
+		margin-top: 86px
+		+sm
+			flex-wrap: wrap
+			justify-content: center
+
+	&__item-last
+		position: relative
+		background-color: $white
+		box-shadow: 0 -10px 30px 0 rgba($blue-grey, .15), 0 10px 30px 0 rgba($blue-grey, .15)
+		width: 31.38%
+		padding: 40px 16px 23px
+		+sm
+			width: 100%
+			max-width: 480px
+			margin-bottom: 28px
+
+	&__item-last-title
+		font-size: 22px
+		font-weight: 700
+
+	&__item-last-subtitle
+		+notosans
+		font-size: 17px
+		line-height: 1.53
+
+	&__item-last-text
+		letter-spacing: .5px
+		margin-top: 28px
+		color: $cool-grey-two
+		font-size: 16px
+		line-height: 1.75

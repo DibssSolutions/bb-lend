@@ -1,0 +1,50 @@
+<!-- advantage begin -->
+<section class="advantage">
+  {% import "data/advantage-data.html" as data %}
+  {% set lastAdvantage = data.lastAdvantage %}
+  {% for item in data.advantages %}
+    {% set isOdd = ((loop.index) % 2 === 1) %}
+    <div class="advantage__inner {% if isOdd %} advantage__inner_blue {% endif %}">
+      <div class="wrapper advantage__wrapper {% if isOdd %} advantage__wrapper_blue {% endif %}">
+        {% if isOdd %}
+          <div class="advantage__line"></div>
+          <div class="advantage__line advantage__line_left"></div>
+          <div class="advantage__line advantage__line_right"></div>
+        {% endif %}
+        {% if loop.first %} <h1 class="advantage__title head head__lg">Why us</h1> {% endif %}
+        <div class="advantage__subtitle-wrapper {% if not isOdd %} advantage__subtitle-wrapper_right {% endif %}">
+          <div class="advantage__icon {% if not isOdd %} advantage__icon_right {% endif %}">{{ item.icon | safe }}</div>
+          <h2 class="advantage__subtitle head head__blue">{{ item.title }}</h2>
+        </div>
+        <ul class="advantage__list">
+          {% for subItem in item.cols %}
+            <li class="advantage__item">
+              <h3 class="advantage__item-title">{{ subItem.title }}</h3>
+              <p class="advantage__item-subtitle">{{ subItem.subTitle }}</p>
+              <p class="advantage__item-text">{{ subItem.text | safe }}</p>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endfor %}
+  <div class="advantage__inner-last">
+    <div class="wrapper advantage__wrapper-last">
+      <div class="advantage__subtitle-last-wrapper">
+        <div class="advantage__icon advantage__icon-last">{{ lastAdvantage.icon | safe }}</div>
+        <h2 class="advantage__subtitle head head__blue">{{ lastAdvantage.title }}</h2>
+        <p class="advantage__description-last">{{ lastAdvantage.subtitle}}</p>
+      </div>
+      <ul class="advantage__list-last">
+        {% for item in lastAdvantage.cols %}
+          <li class="advantage__item-last">
+            <h3 class="advantage__item-last-title">{{ item.title }}</h3>
+            <p class="advantage__item-last-subtitle">{{ item.subTitle }}</p>
+            <p class="advantage__item-last-text">{{ item.text | safe }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- advantage end -->

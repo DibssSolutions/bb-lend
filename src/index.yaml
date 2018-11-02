@@ -3,3 +3,5 @@ ProjectTitle: template
 PageList:
 - file: page.html
   ready: 100
+- file: advantages.html
+  ready: 1
