@@ -1,0 +1,17 @@
+<!-- vision begin -->
+{% import 'data/company-vision-data.html' as data %}
+<section class="company-vision">
+  <div class="wrapper company-vision__wrapper">
+    <h2 class="head company-vision__title">Company vision</h2>
+    <ul class="company-vision__list">
+      {% for item in data.list %}
+        <li class="company-vision__item">
+          <div class="company-vision__image"> {{ item.icon | safe }}</div>
+          <h3 class="company-vision__item-title">{{ item.title }}</h3>
+          <p class="company-vision__item-text">{{ item.text }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<!-- vision end -->
