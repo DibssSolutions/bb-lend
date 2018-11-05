@@ -6,11 +6,20 @@
       {% for item in data.list %}
         {% if item.type === 'team' %}
           <li class="team-cards__item team-cards__team team-cards__team_{{ item.theme }}">
-            <p class="team-cards__team-name">{{ item.name }}</p>
+            <div class="team-cards__team-icon team-cards__team-icon_{{ item.theme }}">
+              {{ item.icon | safe }}
+            </div>
+            <p class="team-cards__team-name">{{ item.name | safe }}</p>
           </li>
         {% elseif item.type === 'person' %}
           <li class="team-cards__item team-cards__person">
-            <img src="{{ item.photo }}" alt="Team person photo" class="team-cards__person-image">
+            {% if item.photo %}
+              <img src="img/team/{{ item.photo }}" alt="Team person photo" class="team-cards__person-image">
+            {% else %}
+              <div class="team-cards__person-icon">
+                {{ item.icon | safe }}
+              </div>
+            {% endif %}
             <p class="team-cards__person-name"> {{ item.name }}</p>
             <span class="team-cards__person-position">{{ item.position }}</span>
           </li>
