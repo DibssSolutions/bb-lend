@@ -1,0 +1,102 @@
+.team-cards
+	background-color: $ice-blue
+	padding-top: 56px
+
+	&__wrapper
+		padding: 0 26px
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		margin-left: -23px
+
+
+	&__item
+		width: calc(25% - 23px)
+		height: 286px
+		margin-top: 24px
+		border-radius: 4px
+		margin-left: 23px
+		+sm
+			width: calc(50% - 23px)
+			min-width: 158px
+		+r(408)
+			width: calc(100% - 23px)
+
+
+	&__team
+		overflow: hidden
+		position: relative
+		padding: 0 24px 16px
+		display: flex
+		box-shadow: 0 10px 10px 0 rgba($blue-grey, 0.19)
+		+md
+			padding: 0 8px 12px
+
+	&__team-icon
+		position: absolute
+
+	&__team-icon_green
+		top: -8px
+		left: -64px
+
+	&__team-icon_red
+		top: -38px
+		right: -38px
+
+	&__team-icon_blue
+		right: -24px
+		top: -48px
+
+	&__team_green
+		background: linear-gradient(141deg, #23bcba, #45e994)
+
+	&__team_red
+		background: linear-gradient(141deg, #ffdea7, #ea6362)
+
+	&__team_blue
+		background: linear-gradient(141deg, #4661ff, #2e9fff)
+
+	&__team-name
+		font-size: 34px
+		color: $white
+		margin-top: auto
+		+md
+			font-size: 28px
+
+	&__person
+		display: flex
+		flex-direction: column
+		align-items: center
+		box-shadow: 0 -10px 30px 0 rgba($blue-grey, 0.15), 0 10px 30px 0 rgba($blue-grey, 0.15)
+		background-color: $white
+		padding: 40px 12px 24px
+		+md
+			padding: 24px 12px 24px
+
+	&__person-image
+		width: 120px
+		height: 120px
+		object-fit: cover
+		border-radius: 50%
+
+	&__person-name
+		+notosans
+		font-size: 16px
+		font-weight: 700
+		line-height: 1.625
+		margin-top: 26px
+		text-align: center
+		+md
+			margin-top: 20px
+
+
+	&__person-position
+		+notosans
+		font-size: 14px
+		letter-spacing: 0.5px
+		color: $light-navy
+		margin-top: 11px
+		text-align: center
+		+md
+			margin-top: 8px
